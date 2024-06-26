@@ -1,6 +1,6 @@
 const email = []
 if (email) {
-    console.log("User mail available");
+    //console.log("User mail available");
 } else {
     console.log("Please enter user mail");
 }
@@ -20,7 +20,7 @@ truthy values
 
 const emptObj={}
 if(Object.keys(emptObj).length === 0){
-    console.log("Empty object");
+    //console.log("Empty object");
 }
 
 //Nullish Coalescing Operator (??):null undefined
@@ -30,11 +30,11 @@ let val1;
 //val1= undefined??15
 
 val1 = null ?? 10??20
-console.log(val1);
+//console.log(val1);
 
 //terinary operation
 
 //condition ? true: false
 
 const icePrice = 100
-icePrice >= 200 ? console.log("less than 80") : console.log("more than 80")
+//icePrice >= 200 ? console.log("less than 80") : console.log("more than 80")
