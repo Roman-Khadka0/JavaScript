@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman|DOM</title>
+</head>
+<body style="background-color: #fff; color: burlywood;">
+    <ol class="Language">
+        <li>JavaScript</li>
+    </ol>
+</body>
+<script>
+    function addLanguage(lang){
+      const li =  document.createElement('li');
+      li.innerHTML = `${lang}`
+      document.querySelector('.Language').appendChild(li)
+    }
+    addLanguage('Python')
+    addLanguage('java')
+
+
+function addOopLang(lang){
+   const li =  document.createElement('li')
+    li.appendChild(document.createTextNode(lang))
+    document.querySelector('.Language').appendChild(li)
+}
+//addOopLang('Ruby')
+//Edits
+//const firstLang = document.querySelector('li:nth-child(1)')
+//const newLi = document.createElement('li')
+//newLi.textContent = 'Mojo'
+//firstLang.replaceWith(newLi)
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    const newLi = document.createElement('li')
+    newLi.textContent = 'Yooo'
+    secondLang.replaceWith(newLi)
+
+//edit
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = "<li>TypeScript</li>"
+
+//remove
+const lastLang = document.querySelector("li:last-child")
+lastLang.remove()
+</script>
+</html>
